@@ -1,45 +1,33 @@
 package org.example;
+
 import javax.swing.*;
+
 public class NumeroPrimo {
-    public static void main(String[] args) {
+    public boolean NumeroPrimo(int numeroPrimo){
 
-        while (true) {
-            String numero = JOptionPane.showInputDialog("Ingrese el numero a evaluar");
 
-            if (numero == null) {
-                JOptionPane.showMessageDialog(null, "Programa finalizado.");
-                break;
+            if (numeroPrimo != 2 && numeroPrimo % 2 == 0) {
+                return false;
+            } else if (numeroPrimo != 3 && numeroPrimo % 3 == 0) {
+                return false;
+            } else if (numeroPrimo != 4 && numeroPrimo % 4 == 0) {
+                return false;
+            } else if (numeroPrimo != 5 && numeroPrimo % 5 == 0) {
+                return false;
+            } else if (numeroPrimo != 6 && numeroPrimo % 6 == 0) {
+                return false;
+            } else if (numeroPrimo != 7 && numeroPrimo % 7 == 0) {
+                return false;
+            } else if (numeroPrimo != 8 && numeroPrimo % 8 == 0) {
+                return false;
+            } else if (numeroPrimo != 9 && numeroPrimo % 9 == 0) {
+                return false;
+            } else {
+                return true;
             }
-            try {
-               int numeroconvertido = Integer.parseInt(numero);
 
-
-
-                if (numeroconvertido != 2 && numeroconvertido % 2 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 3 && numeroconvertido % 3 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 4 && numeroconvertido % 4 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 5 && numeroconvertido % 5 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 6 && numeroconvertido % 6 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 7 && numeroconvertido % 7 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 8 && numeroconvertido % 8 == 0) {
-                    System.out.println("El numero no es primo");
-                } else if (numeroconvertido != 9 && numeroconvertido % 9 == 0) {
-                    System.out.println("El numero no es primo");
-                } else {
-                    System.out.println("El número es primo");
-                }
-
-            }catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Entrada inválida. Ingrese un número entero.");
-                continue;
-            }
-        }
 
     }
-}
+
+    }
+
