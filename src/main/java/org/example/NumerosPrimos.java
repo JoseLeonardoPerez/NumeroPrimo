@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.*;
 import javax.swing.*;
 public class NumerosPrimos {
@@ -102,5 +103,16 @@ public class NumerosPrimos {
                            JOptionPane.showMessageDialog(null, "Gracias por usar el sistema. ¡Hasta luego!");
                           }
 
+
+                          String valor = JOptionPane.showInputDialog("Bienvenido al sistema de reversa de digitos, por favor ingrese una cadena de caravteres");
+                          Revertidos revertir = new Revertidos(valor);
+                          //JOptionPane.showMessageDialog(null, "El numero invertido es:" + revertir);
+
+
+
+
+
     }
 }
+
+
